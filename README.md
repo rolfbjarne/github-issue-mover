@@ -7,6 +7,8 @@ It needs a Personal Access Token from GitHub, which can be created
 `Full control of private repositories` (it might be enough with
 `Access public repositories`, depending on the repository).
 
+Comments will be copied, but labels, milestones or assignees will not.
+
 ## Examples
 
 ```
