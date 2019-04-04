@@ -100,7 +100,7 @@ class MainClass {
 		var limits = client.GetLastApiInfo ().RateLimit;
 		Console.WriteLine ($"    Rate limit: {limits.Limit}");
 		Console.WriteLine ($"    Remaining: {limits.Remaining}");
-		Console.WriteLine ($"    Reset date: {limits.Reset}");
+		Console.WriteLine ($"    Reset date: {FormatDate (limits.Reset)}");
 
 		Issue sourceIssue;
 		try {
