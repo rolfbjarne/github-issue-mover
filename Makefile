@@ -1,5 +1,5 @@
-all: bin/Debug/github-issue-mover.exe
+BIN=bin/Release/publish/github-issue-mover
+all: $(BIN)
 
-bin/Debug/github-issue-mover.exe: $(wildcard *.cs *.csproj packages.config)
-	nuget restore
-	msbuild $(wildcard *.csproj)
+$(BIN): $(wildcard *.cs *.csproj packages.config)
+	dotnet publish $(wildcard *.csproj) /bl:msbuild.binlog /p:SelfContained=true
