@@ -2,4 +2,4 @@
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-bin/Release/publish/github-issue-mover "$@"
+bin/Release/github-issue-mover "$@"
