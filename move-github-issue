@@ -2,5 +2,5 @@
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-./github-issue-mover --from="$1" --to="$2" --token="$(cat ~/.github-status-pat)"
+./github-issue-mover --from="$1" --to="$2" --token="$(cat ~/.config/move-github-issue-pat)"
 
